@@ -2,4 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+}
+
+.scrollbar-hide{
+  display: none;
+}
 /* npx tailwindcss -i ./app/globals.css -o ./app/output.css --watch */
