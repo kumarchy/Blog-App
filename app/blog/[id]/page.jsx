@@ -1,12 +1,12 @@
 'use client'
-import { assets, blog_data } from '@/Assets/assets';
+import { assets} from '@/Assets/assets';
 import Footer from '@/Components/Footer';
 import axios from 'axios';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
-const page = ({params}) => {
+const Page = ({params}) => {
   const [data,setData]=useState(null);
   
   const fetchBlogData=async ()=>{
