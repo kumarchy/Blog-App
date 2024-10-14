@@ -67,7 +67,9 @@ The API route processes the image, saves it to the server, and creates a new blo
 ## Deployment
 - The application is designed to be easily deployable to platforms like Vercel or Netlify.
 - Environment variables (like the MongoDB connection string) should be set in the deployment platform for security.
+  
 This architecture allows for a scalable, maintainable, and performant blog application. The separation of concerns between frontend and backend, use of reusable components, and integration with a NoSQL database make it a robust solution for content management and delivery.
+
 ## Setup and Installation
 1. Clone the repository:
    ```bash
