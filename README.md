@@ -20,6 +20,32 @@ This is a modern, full-stack blog application built with Next.js, React, and Mon
 - Notifications: React Toastify
 - Image Optimization: Next.js Image Component
 ## Project Structure
+    ```bash
+     ├── app/
+     │   ├── admin/
+     │   │   ├── addblog/
+     │   │   ├── allblogs/
+     │   │   └── subscription/
+     │   ├── blog/
+     │   │   └── [id]/
+     │   ├── api/
+     │   │   ├── blog/
+     │   │   └── email/
+     │   └── layout.js
+     ├── components/
+     │   ├── AdminComponents/
+     │   ├── BlogList.js
+     │   ├── Footer.js
+     │   ├── Header.js
+     │   └── ItemBlog.js
+     ├── lib/
+     │   ├── config/
+     │   │   └── db.js
+     │   └── models/
+     │       ├── BlogModel.js
+     │       └── EmailModel.js
+     ├── public/
+     └── package.json
 
 ## How It Works
 This Next.js blog application follows a modern full-stack architecture. Here's an overview of how the different parts of the application work together:
