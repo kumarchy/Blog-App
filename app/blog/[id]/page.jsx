@@ -10,14 +10,6 @@ const Page = ({params}) => {
   const [data,setData]=useState(null);
   
   const fetchBlogData=async ()=>{
-    //  for(let i=0;i<blog_data.length;i++){
-    //   if(Number(params.id)===blog_data[i].id){
-    //     setData(blog_data[i]);
-    //     console.log(blog_data[i]);
-    //     break;
-    //   }
-    //  }
-
     const response = await axios.get('/api/blog/',{
       params:{
         id:params.id
