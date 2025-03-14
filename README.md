@@ -135,3 +135,8 @@ This architecture allows for a scalable, maintainable, and performant blog appli
 - DELETE /api/email: Delete an email subscription.
 ## Contributing
 - Contributions are welcome! Please feel free to submit a Pull Request.
+  
+## Screenshots
+
+![image](https://github.com/kumarchy/FullStack-Attendance-System/blob/c9b36b92cf646ad52528e429b1d194074581dd94/Screenshot%202024-10-12%20005711.png)
+  
