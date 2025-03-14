@@ -138,5 +138,5 @@ This architecture allows for a scalable, maintainable, and performant blog appli
   
 ## Screenshots
 
-![image](https://github.com/kumarchy/FullStack-Attendance-System/blob/c9b36b92cf646ad52528e429b1d194074581dd94/Screenshot%202024-10-12%20005711.png)
+![image](https://raw.githubusercontent.com/kumarchy/Blog-App/2fd45bd2a22ab7049b3284dfb3433c8db7f35ddc/blog_app.png)
   
