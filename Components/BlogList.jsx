@@ -26,7 +26,7 @@ const BlogList = () => {
       <button onClick={()=>setMenu("Startup")} className={menu==="Startup"?'bg-black text-white py-1 px-4 rounded-sm':""} >StartUp</button>
       <button onClick={()=>setMenu("Lifestyle")} className={menu==="Lifestyle"?'bg-black text-white py-1 px-4 rounded-sm':""} >LifeStyle</button>
       </div>
-      <div className='flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24'>
+      <div className='flex flex-wrap gap-4 gap-y-10 mb-16 xl:mx-24 w-full'>
       {blogs.filter((item)=>menu=="All"?true:item.category===menu).map((item,index)=>{
        return <ItemBlog key={index} id={item._id} image={item.image} title={item.title} description={item.description} category={item.category}/>
       })}
