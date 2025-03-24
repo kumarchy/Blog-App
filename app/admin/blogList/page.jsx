@@ -8,18 +8,26 @@ const Page = () => {
   const [blogs, setBlogs] = useState([]);
 
   const fetchBlogs = async () => {
-    const response = await axios.get("/api/blog");
-    setBlogs(response.data.blogs);
+    try {
+      const response = await axios.get('/api/blog');
+      setBlogs(response.data.blogs);
+    } catch (error) {
+      console.error("Failed to fetch blogs:", error);
+      toast.error("Failed to load blogs");
+    }
   };
-
+  
   const deleteBlogs = async (mongoId) => {
-    const response = await axios.delete("/api/blog", {
-      params: {
-        id: mongoId,
-      },
-    });
-    toast.success(response.data.message);
-    fetchBlogs();
+    try {
+      const response = await axios.delete('/api/blog', {
+        params: { id: mongoId }
+      });
+      toast.success(response.data.message);
+      fetchBlogs(); // Refresh the list
+    } catch (error) {
+      console.error("Failed to delete blog:", error);
+      toast.error(error.response?.data?.message || "Failed to delete blog");
+    }
   };
 
   useEffect(() => {
