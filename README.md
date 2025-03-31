@@ -138,5 +138,5 @@ This architecture allows for a scalable, maintainable, and performant blog appli
   
 ## Screenshots
 
-![image](https://raw.githubusercontent.com/kumarchy/Blog-App/2fd45bd2a22ab7049b3284dfb3433c8db7f35ddc/blog_app.png)
+![image](https://github.com/kumarchy/Blog-App/blob/main/Screenshot%20From%202025-03-31%2018-26-12.png?raw=true)
   
